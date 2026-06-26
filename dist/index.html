@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shwetha Sakthidharan | Portfolio</title>
+  <meta name="description"
+    content="Professional Portfolio of Shwetha Sakthidharan, Software Engineer specializing in software development, data pipelines, platform engineering, and cloud technologies.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <script type="module" crossorigin src="/assets/index-B98ieZ9f.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-912zsfsB.css">
+</head>
+
+<body>
+  <!-- Canvas for 3D Background -->
+  <canvas id="bg-3d"></canvas>
+
+  <!-- Main Container -->
+  <div class="app-container">
+
+    <!-- Top Navigation Header -->
+    <header class="header">
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Pill Links -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certificates</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+
+        <!-- Mobile-only Social Links -->
+        <div class="mobile-social-links">
+          <a href="https://linkedin.com/in/shwethasakthidharan" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/shwethasakthidharan" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="mailto:shwethasakthidharan@gmail.com" title="Email">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- External Links -->
+      <div class="social-links">
+        <a href="https://linkedin.com/in/shwethasakthidharan" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+          id="link-linkedin">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://github.com/shwethasakthidharan" target="_blank" rel="noopener noreferrer" title="GitHub"
+          id="link-github">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="mailto:shwethasakthidharan@gmail.com" title="Email" id="link-email">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Panels -->
+    <main class="content-panel" id="scroll-container">
+
+      <!-- Section 0: Home -->
+      <section id="home" class="section home-section">
+        <span class="home-greeting">Hi, I'm</span>
+        <h1 class="home-name name-gradient">Shwetha Sakthidharan</h1>
+
+        <div class="home-photo-container">
+          <img src="/assets/photo-CxSKjC_y.jpeg" alt="Shwetha Sakthidharan" class="home-photo">
+        </div>
+
+        <h2 class="home-title">Software Engineer</h2>
+        <p class="home-description">
+          Passionate Software Engineer specializing in software development, cloud technologies, and scalable
+          applications, with a strong focus on problem-solving, continuous learning, and delivering high-quality
+          software solutions.
+        </p>
+      </section>
+
+      <!-- Section 1: About / Summary -->
+      <section id="about" class="section card-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Professional Summary</h2>
+          </div>
+          <div class="card-body">
+            <p class="about-text" id="summary-content">
+              Software Engineer with hands-on experience in software development, data analysis, platform engineering,
+              and cloud technologies. Proficient in Python, SQL, and modern development tools, with experience building
+              scalable applications, data pipelines, REST APIs, and enterprise Linux platform solutions.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-val"><a href="mailto:shwethasakthidharan@gmail.com"
+                    class="link-glow">shwethasakthidharan@gmail.com</a></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <span class="info-val"><a href="tel:+919884256206" class="link-glow">+91 9884256206</a></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-val">Chennai, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Focus Areas</span>
+                <span class="info-val">Software development, Platform & Cloud</span>
+              </div>
+            </div>
+
+            <!-- Education Sub-panel inside About -->
+            <div class="sub-header-container">
+              <h3 class="sub-header">Education</h3>
+            </div>
+            <div class="education-timeline" id="education-container">
+              <!-- Populated via Javascript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Skills -->
+      <section id="skills" class="section card-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Skills</h2>
+          </div>
+          <div class="card-body">
+            <p class="section-lead-text">Explore areas of technical expertise.</p>
+            <div class="skills-categories-wrapper" id="skills-container">
+              <!-- Populated via Javascript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Experience -->
+      <section id="experience" class="section card-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Experience</h2>
+          </div>
+          <div class="card-body">
+            <!-- Timeline Container -->
+            <div class="timeline" id="experience-container">
+              <!-- Populated via Javascript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Projects -->
+      <section id="projects" class="section card-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Projects</h2>
+          </div>
+          <div class="card-body">
+            <div class="projects-grid" id="projects-container">
+              <!-- Populated via Javascript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Certificates -->
+      <section id="certifications" class="section card-pane">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Certificates</h2>
+          </div>
+          <div class="card-body">
+            <div class="certifications-grid" id="certifications-container">
+              <!-- Populated via Javascript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer/Contact Section -->
+      <footer id="contact" class="contact-section">
+        <div class="glass-card contact-card">
+          <h2 class="contact-title">Contact</h2>
+          <p class="contact-lead">Interested in software development, data pipelines, or cloud integrations? Let's
+            connect!</p>
+
+          <div class="contact-methods">
+            <a href="mailto:shwethasakthidharan@gmail.com" class="contact-pill glow-cyan-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              shwethasakthidharan@gmail.com
+            </a>
+            <a href="tel:+919884256206" class="contact-pill glow-purple-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +91 9884256206
+            </a>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2026 Shwetha Sakthidharan. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Core Javascript Bundle -->
+</body>
+
+</html>
