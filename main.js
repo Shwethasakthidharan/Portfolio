@@ -3,7 +3,6 @@ import { portfolioData } from './data.js';
 
 // Shared reference to 3D shapes — updated on theme change
 let bgShapes = [];
-
 // Update wireframe colors to match current theme
 function syncBgTheme() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
